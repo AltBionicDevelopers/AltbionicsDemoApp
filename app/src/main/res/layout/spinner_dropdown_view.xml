@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="?attr/spinnerDropdownPressed"
+    android:paddingTop="10dp"
+    android:singleLine="true"
+    android:textAlignment="center"
+    android:textAllCaps="true"
+    android:textColor="?attr/colorNavigationItem"
+    android:textSize="20sp"
+    android:textStyle="bold" />

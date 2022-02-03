@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary Theme Attributes-->
+    <attr name="primaryColor" format="reference" />
+    <attr name="primaryColorOnPrimary" format="reference" />
+    <attr name="tooltipTextColor" format="reference" />
+
+    <!--Background Attributes-->
+    <attr name="gripsBackground" format="reference" />
+    <attr name="gripSettingsBackground" format="reference" />
+    <attr name="devicesBackground" format="reference" />
+
+    <!--Element Attributes-->
+    <attr name="listWindowFrame" format="reference" />
+    <attr name="slider" format="reference" />
+    <!--Seekbar attributes-->
+    <attr name="seekbarTooltipImage" format="reference" />
+    <attr name="seekbar" format="reference" />
+    <attr name="seekbarThumb" format="reference" />
+    <attr name="seekbarThumb_Thumb" format="reference" />
+    <attr name="seekbarThumb_Index" format="reference" />
+    <attr name="seekbarThumb_Middle" format="reference" />
+    <attr name="seekbarThumb_Ring" format="reference" />
+    <attr name="seekbarThumb_Pinky" format="reference" />
+    <!--Spinner attributes-->
+    <attr name="spinnerBasePressed" format="reference" />
+    <attr name="spinnerDropdownPressed" format="reference" />
+    <!--Button attributes-->
+    <attr name="refreshButtonPressed" format="reference" />
+    <attr name="addButtonPressed" format="reference" />
+    <!--Navigation Drawer Attributes-->
+    <attr name="navigationDrawerBackground" format="reference" />
+    <attr name="colorNavigationItem" format="color" />
+    <attr name="colorNavigationHover" format="color" />
+    <attr name="colorNavigationPressed" format="color" />
+    <attr name="colorNavigationItemSelected" format="color" />
+    <attr name="colorNavigationItemFocused" format="color" />
+    <attr name="colorNavigationItemPressed" format="color" />
+    <attr name="drawableNavigationItemBackground" format="reference" />
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:singleLine="true"
+    android:textColor="?attr/colorNavigationItem"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:textAlignment="center"/>

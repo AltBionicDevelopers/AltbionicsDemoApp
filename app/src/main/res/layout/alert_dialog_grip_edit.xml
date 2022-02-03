@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <EditText
+        android:id="@+id/gripNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="@string/grip_name_entry_hint"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/gripDescriptionField"
+        android:layout_below="@id/gripNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:hint="@string/grip_description_entry_hint"
+        android:autofillHints="" />
+</RelativeLayout>

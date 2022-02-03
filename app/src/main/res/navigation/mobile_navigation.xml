@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_grips">
+
+    <fragment
+        android:id="@+id/nav_grips"
+        android:name="com.altbionics.GripTool.ui.GripsFragment"
+        android:label="@string/nav_grips"
+        tools:layout="@layout/grips_fragment" >
+        <action
+            android:id="@+id/action_nav_grips_to_nav_devices"
+            app:destination="@id/nav_devices" />
+        <action
+            android:id="@+id/action_nav_grips_to_nav_grip_settings"
+            app:destination="@id/nav_grip_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_grip_settings"
+        android:name="com.altbionics.GripTool.ui.GripSettingsFragment"
+        android:label="@string/nav_grip_settings"
+        tools:layout="@layout/grip_settings_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_devices"
+        android:name="com.altbionics.GripTool.ui.DevicesFragment"
+        android:label="@string/nav_devices"
+        tools:layout="@layout/devices_fragment" >
+    </fragment>
+</navigation>

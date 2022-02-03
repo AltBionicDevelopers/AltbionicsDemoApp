@@ -1,0 +1,242 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GripTool" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--Navigation Selection Colors-->
+        <item name="colorNavigationItem">@color/menu_item_color_state</item>
+        <item name="colorNavigationHover">@color/menu_item_color_state</item>
+        <item name="colorNavigationPressed">@color/menu_item_color_state</item>
+        <item name="colorNavigationItemSelected">?attr/primaryColorOnPrimary</item>
+        <item name="colorNavigationItemFocused">?attr/primaryColorOnPrimary</item>
+        <item name="colorNavigationItemPressed">?attr/primaryColorOnPrimary</item>
+        <item name="drawableNavigationItemBackground">@drawable/nav_menu_selector</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <style name="Base.Theme.GripTool.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+    </style>
+
+    <!--Appbar theme styling-->
+    <style name="AppBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!--Toolbar styling-->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:theme">@style/AppBarOverlay</item>
+        <item name="popupTheme">@style/PopupOverlay</item>
+    </style>
+
+    <!--Appbar overlay styling-->
+    <style name="AppBarOverlay" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionOverflowMenuStyle">@style/PopupOverlay</item>
+        <item name="colorControlNormal">?attr/primaryColor</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <!--Appbar toolbar overflow/dropdown menu styling-->
+    <style name="PopupOverlay" parent="Base.Widget.AppCompat.PopupMenu">
+        <item name="overlapAnchor">false</item>
+        <item name="android:overlapAnchor" tools:ignore="NewApi">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dip</item>
+        <item name="android:textColorPrimary">?attr/primaryColorOnPrimary</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <!--Navigation drawer styling-->
+    <style name="NavigationView">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:clipToPadding">false</item>
+        <!--<item name="android:layout_marginTop">?attr/actionBarSize</item>-->
+        <item name="android:background">@drawable/nav_drawer_bg</item>
+        <item name="headerLayout">@layout/nav_header_main</item>
+        <item name="menu">@menu/activity_main_drawer</item>
+        <item name="itemIconSize">20dp</item>
+        <item name="itemTextAppearance">@style/NavDrawerTextStyle</item>
+        <item name="itemTextColor">?attr/primaryColor</item>
+        <item name="itemIconTint">?attr/primaryColor</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+        <item name="theme">@style/colorHighlight</item>
+    </style>
+
+    <style name="navGroupText">
+        <item name="android:textColorSecondary">?attr/primaryColor</item>
+    </style>
+
+    <!--Navigation Drawer text formatting-->
+    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="colorHighlight">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <!--Device list text formatting-->
+    <style name="DeviceList_Text">
+        <item name="android:textColor">?attr/colorNavigationItem</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Progress spinner styling-->
+    <style name="progressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">?attr/primaryColor</item>
+    </style>
+
+    <style name="seekBar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:max">180</item>
+        <item name="android:progressDrawable">?attr/seekbar</item>
+        <item name="android:rotation">270</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:thumb">?attr/seekbarThumb</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+        <item name="android:minWidth">500dp</item>
+        <item name="android:maxWidth">500dp</item>
+        <item name="android:thumbOffset">-2dp</item>
+    </style>
+
+    <!--Grip button layout parameters-->
+    <style name="gripButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:longClickable">true</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!--Device list refresh button styling-->
+    <style name="refreshButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">86dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/od_b_refresh_pressed</item>
+    </style>
+
+    <!--Spinner styling-->
+    <style name="spinner">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:dropDownWidth">match_parent</item>
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:textColor">?attr/colorNavigationItemPressed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">gravity</item>
+
+    </style>
+
+
+    <!--Beginning of styles for Black and Blue theme-->
+    <style name="Fire" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primaryVariant</item>
+        <item name="colorOnSecondary">@color/onPrimary</item>
+        <item name="primaryColor">@color/primary</item>
+        <item name="primaryColorOnPrimary">@color/onPrimary</item>
+        <item name="tooltipTextColor">@android:color/black</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--Main theme styling-->
+        <!--Status bar-->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="slider">@drawable/slider_theme_fire</item>
+        <!--Background-->
+        <item name="gripsBackground">@drawable/od_grips_bg</item>
+        <item name="gripSettingsBackground">@drawable/od_grip_settings_bg</item>
+        <item name="devicesBackground">@drawable/od_devices_bg</item>
+        <item name="listWindowFrame">@drawable/list_window_dark</item>
+        <!--Grip spinner-->
+        <item name="spinnerBasePressed">@drawable/od_spinner_base_pressed</item>
+        <item name="spinnerDropdownPressed">@drawable/od_spinner_dd_pressed</item>
+        <!--Seekbar-->
+        <item name="seekbarTooltipImage">@drawable/od_sb_tooltip</item>
+        <item name="seekbar">@drawable/od_sb_final</item>
+        <item name="seekbarThumb_Thumb">@drawable/od_sbt_thumb_size</item>
+        <item name="seekbarThumb_Index">@drawable/od_sbt_index_size</item>
+        <item name="seekbarThumb_Middle">@drawable/od_sbt_middle_size</item>
+        <item name="seekbarThumb_Ring">@drawable/od_sbt_ring_size</item>
+        <item name="seekbarThumb_Pinky">@drawable/od_sbt_pinky_size</item>
+        <!--Buttons-->
+        <item name="refreshButtonPressed">@drawable/od_b_refresh_pressed</item>
+        <item name="addButtonPressed">@drawable/od_b_add_pressed</item>
+    </style>
+
+
+    <style name="Electric" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/secondary</item>
+        <item name="colorPrimaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnPrimary">@color/onSecondary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="primaryColor">@color/secondary</item>
+        <item name="primaryColorOnPrimary">@color/onSecondary</item>
+        <item name="tooltipTextColor">@android:color/black</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--Main theme styling-->
+        <!--Status bar-->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="slider">@drawable/slider_theme_electric</item>
+        <!--Backgrounds-->
+        <item name="gripsBackground">@drawable/bd_grips_bg</item>
+        <item name="gripSettingsBackground">@drawable/bd_grip_settings_bg</item>
+        <item name="devicesBackground">@drawable/bd_devices_bg</item>
+        <item name="listWindowFrame">@drawable/list_window_dark</item>
+        <!--Grip spinner-->
+        <item name="spinnerBasePressed">@drawable/bd_spinner_base_pressed</item>
+        <item name="spinnerDropdownPressed">@drawable/bd_spinner_dd_pressed</item>
+        <!--Seekbar-->
+        <item name="seekbarTooltipImage">@drawable/bd_sb_tooltip</item>
+        <item name="seekbar">@drawable/bd_sb_final</item>
+        <item name="seekbarThumb_Thumb">@drawable/bd_sbt_thumb_size</item>
+        <item name="seekbarThumb_Index">@drawable/bd_sbt_index_size</item>
+        <item name="seekbarThumb_Middle">@drawable/bd_sbt_middle_size</item>
+        <item name="seekbarThumb_Ring">@drawable/bd_sbt_ring_size</item>
+        <item name="seekbarThumb_Pinky">@drawable/bd_sbt_pinky_size</item>
+        <!--Buttons-->
+        <item name="refreshButtonPressed">@drawable/bd_b_refresh_pressed</item>
+        <item name="addButtonPressed">@drawable/bd_b_add_pressed</item>
+    </style>
+</resources>

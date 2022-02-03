@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AltBionics v1.0</string>
+
+    <!--Shared Preference Keys-->
+    <string name="appStartup" tools:ignore="Typos">com.altbionics.GripTool.appStartup</string>
+    <string name="selectedDeviceName" tools:ignore="Typos">com.altbionics.GripTool.selectedDeviceName</string>
+    <string name="selectedDeviceMAC" tools:ignore="Typos">com.altbionics.GripTool.selectedDeviceMAC</string>
+    <string name="currentTheme" tools:ignore="Typos">com.altbionics.GripTool.currentTheme</string>
+
+    <!--Menu values-->
+    <string name="nav_header_subtitle">altbionics.com</string>
+    <string name="nav_header_desc">Altbionics icon</string>
+
+    <string name="menu_main_title">Main Options</string>
+    <string name="nav_grips">Grips</string>
+    <string name="nav_grip_settings">Grip Settings</string>
+    <string name="nav_devices">Devices</string>
+
+    <string name="menu_list_options">List Options</string>
+    <string name="menu_reset_list">Reset</string>
+    <string name="menu_delete_list">Delete</string>
+    <string name="menu_import_list">Import</string>
+    <string name="menu_save_list">Save</string>
+    <string name="add_grip_tooltip">Add a Grip</string>
+
+    <string name="menu_themes_title">Themes</string>
+    <string name="fire_theme_title">Fire</string>
+    <string name="electric_theme_title">Electric</string>
+
+    <string name="menu_support_title">Support</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="about_us_link">https://altbionics.com/#About-ID</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_link">https://altbionics.com/privacy-policy/</string>
+
+
+    <!--Bluetooth connection variables-->
+    <string name="permissions_needed_title">Permissions Request</string>
+    <string name="permissions_needed_description">This application requires location access to scan for Bluetooth devices.</string>
+
+    <string name="sending_data_title">Data Transferring</string>
+    <string name="sending_data_description">Please wait while the action is completed…</string>
+    <string name="upload_complete_title">Upload completed.</string>
+    <string name="upload_complete_description">Grip uploaded successfully.</string>
+
+    <string name="error_connecting_title">Error Connecting</string>
+    <string name="error_connecting_description">Could not connect to the selected device.</string>
+    <string name="error_sending_title">Error Alert</string>
+    <string name="error_sending_description">An error occurred while processing the request. Please try again.</string>
+    <string name="error_sending_file_ack">Device did not respond. Please try again.</string>
+    <string name="confirm_title">Permissions Request Cancellation</string>
+    <string name="confirm_description">Permissions are required in order for the app to function properly. Are you sure you wish to cancel the permissions request?</string>
+    <string name="refreshButton_description">refresh button</string>
+
+
+    <!--Device Strings-->
+    <string name="bluetooth_alert_title">Bluetooth Disabled</string>
+    <string name="bluetooth_alert_description">Bluetooth is currently disable. Do you wish to enable?</string>
+    <string name="scan_alert_title">Cancelling Scan</string>
+    <string name="scan_alert_description">Device list refresh has been cancelled because Bluetooth is disabled.</string>
+
+
+    <!--grip_settings variables-->
+    <string name="seekbar_toolbar_text">0</string>
+
+
+    <!--grip variable strings-->
+        <!--Grip list item view labels-->
+    <string name="recycler_name_label">Grip Name:</string>
+    <string name="recycler_grip_value_label">Grip Values:</string>
+    <string name="recycler_grip_description_label">Description:</string>
+    <string name="recycler_user_name_label">grip name</string>
+    <string name="recycler_user_grip_value_label">grip values</string>
+    <string name="recycler_user_grip_description_label">description</string>
+
+        <!--Alert titles and descriptions-->
+    <string name="null_entry_title">File Name Alert</string>
+    <string name="null_entry_description">File name cannot be blank. Please Try again.</string>
+    <string name="file_exists_title">File Alert</string>
+    <string name="file_exists_description">Grip file name already exists. Do you wish to overwrite?</string>
+    <string name="save_and_import_hint">Preferred list name</string>
+    <string name="save_title">Save Grip List</string>
+    <string name="save_description">Please enter a name for the list.</string>
+    <string name="import_title">Import Grip List</string>
+    <string name="import_description">Please select a file to import.</string>
+    <string name="delete_title">Delete Grip List</string>
+    <string name="delete_description">Please select a file to delete.</string>
+    <string name="confirm_reset_title">Reset Confirmation</string>
+    <string name="confirm_reset_description">Are you sure you want to reset to the default grip patterns?</string>
+    <string name="data_entry_title">Grip Data Entry</string>
+    <string name="data_entry_description">Please enter the new grip name and description.</string>
+    <string name="data_null_title">Entry Error</string>
+    <string name="data_null_description">Grip Name or Description was blank. Please try again.</string>
+    <string name="data_exists_title">Grip Found</string>
+    <string name="data_exists_description">Grip name already exists. Do you wish to overwrite?</string>
+    <string name="no_device_title">Device Error</string>
+    <string name="no_device_description">Please select a device first.</string>
+    <string name="grip_name_entry_hint">Name</string>
+    <string name="grip_description_entry_hint">Description</string>
+    <string name="cancelling_alert_title">Cancelling</string>
+    <string name="cancelling_alert_description">Please wait…</string>
+    <string name="null_directory_title">Action Cancelled</string>
+    <string name="null_directory_description">No grip files available.</string>
+
+        <!--Specials-->
+    <string name="easter_egg">QtBDL8EiNZo</string>
+</resources>

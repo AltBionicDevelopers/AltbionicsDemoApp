@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/bd_sbt_thumb"
+        android:top="1.25dp"
+        android:width="@dimen/button_radius"
+        android:height="@dimen/button_radius"
+        android:gravity="center_vertical|fill_horizontal">
+    </item>
+</layer-list>
